@@ -45,11 +45,11 @@ y = array([[0, 1, 1, 0]]).T
 random.seed(1)
 # w0 输入层到隐藏层的权重 3->4 的权重
 # w2 隐藏层到输出层的权重 4->1 的权重
-w0 = random.random((3, 512)) * 2 - 1
-w1 = random.random((512, 1)) * 2 - 1
+w0 = random.random((3, 4)) * 2 - 1
+w1 = random.random((4, 1)) * 2 - 1
 weights = random.random((3, 1)) * 2 - 1
 
-for it in range(256):
+for it in range(10000):
     # 正向推导
     l0 = X
     l1, l2 = fp(l0)
@@ -58,5 +58,5 @@ for it in range(256):
     w1 = w1 + dot(l1.T, l1_delta)
     w0 = w0 + dot(l0.T, l0_delta)
 
-print(fp([1, 0, 1])[1])
+print(fp([0, 0, 0])[1])
 print("<--可能性")
