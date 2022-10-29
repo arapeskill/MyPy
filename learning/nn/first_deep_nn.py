@@ -19,7 +19,7 @@ def bp(y_var, output_var):
 #                ┏━━━━┓              ┏━━━━┓      ︻
 # [0, 0, 1]      random              result      0
 # [1, 1, 1]      random              result      1
-# [1, 0, 1]  ╳   random  ↔           result      1
+# [1, 0, 1]  ╳   random  ↔    0       result      1
 # [0, 1, 1]      random              result      0
 #                ┗━━━━┛              ┗━━━━┛      ︼
 
