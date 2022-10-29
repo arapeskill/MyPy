@@ -34,7 +34,7 @@ def bp(l1, l2, y):
 #                ┏━━━━┓              ┏━━━━┓      ︻
 # [0, 0, 1]      random              result      0
 # [1, 1, 1]      random              result      1
-# [1, 0, 1]  ╳   random  ↔    0       result      1
+# [1, 0, 1]  ╳   random  ↔    0      result      1
 # [0, 1, 1]      random              result      0
 #                ┗━━━━┛              ┗━━━━┛      ︼
 
