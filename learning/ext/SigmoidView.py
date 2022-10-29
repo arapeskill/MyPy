@@ -1,8 +1,10 @@
-'''python绘制sigmoid图像'''
+"""
+python绘制sigmoid图像
+"""
 import time
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 #  定义 sigmoid(x)
