@@ -15,7 +15,14 @@ def bp(y_var, output_var):
     return error * k_slope
 
 
-# 准备数据: X是输入参数, y是正确结果
+# 准备数据: X是输入参数, y是正确结果   [添加][注释][Sigmoid]
+#                ┏━━━━┓              ┏━━━━┓      ︻
+# [0, 0, 1]      random              result      0
+# [1, 1, 1]      random              result      1
+# [1, 0, 1]  ╳   random  ↔           result      1
+# [0, 1, 1]      random              result      0
+#                ┗━━━━┛              ┗━━━━┛      ︼
+
 X = array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]])
 y = array([[0, 1, 1, 0]]).T
 
