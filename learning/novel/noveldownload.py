@@ -2,8 +2,8 @@
 
 # 从selenium模块中导入driver类
 import time
+
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 
 
 def wait(delay):
