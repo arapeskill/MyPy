@@ -55,7 +55,7 @@ for i in names:
     tmp = tmp + "soft/sort0" + str(i + 1)+'/'
     print(tmp)
     driver.get(tmp)
-    wait(3)
+    waitZ(3)
 
 # 关闭浏览器，释放进程
 driver.quit()
